@@ -1,0 +1,39 @@
+<hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
+  <extensions>
+    <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
+   
+    <extension name="toptalcommercewebservices"/>
+    
+    <extension name='commerceservicesbackoffice' />
+    <extension name='solrfacetsearchbackoffice' />
+    <extension name='solrserver' />
+    <extension name='yacceleratorbackoffice' />
+    <extension name='yacceleratorinitialdata' />
+    <extension name='electronicsstore' />
+    <extension name='spartacussampledataaddon' />
+    <extension name='captchaaddon' />
+    <extension name='acceleratorwebservicesaddon' />
+    <extension name='commerceorgsamplesaddon' />
+    <extension name='orderselfserviceaddon' />
+    <extension name='textfieldconfiguratortemplatebackoffice' />
+    <extension name='textfieldconfiguratortemplateaddon' />
+    <extension name='cmswebservices' />
+    <extension name='permissionswebservices' />
+    <extension name='cmsbackoffice' />
+    <extension name='cmsoccaddon' />
+    <extension name='notificationaddon' />
+    <extension name='pcmbackofficesamplesaddon' />
+    <extension name='xyformsbackoffice' />
+    <extension name='xyformsstorefrontcommons' />
+    <extension name='xyformssamples' />
+    <extension name='xyformsweb' />
+    <extension name='platformbackoffice' />
+    <extension name='orbeonweb' />
+    <extension name='consignmenttrackingoccaddon' />
+    <extension name='notificationoccaddon' />
+    
+    <extension name="toptalfacades"/>
+    <extension name="toptalcore"/>
+
+  </extensions>
+</hybrisconfig>

@@ -1,0 +1,23 @@
+$passwordEncoding = md5
+$defaultPassword = 1234
+$setPassword = @password[translator = de.hybris.platform.impex.jalo.translators.ConvertPlaintextToEncodedUserPasswordTranslator][default = '$passwordEncoding:$defaultPassword']
+
+INSERT_UPDATE BackofficeRole;UID[unique=true];locname[lang=en];backOfficeLoginDisabled;authorities ;
+;customercmsmanagerrole;Backoffice CMS Manager role;FALSE;customercmsmanagerrole
+
+INSERT_UPDATE PrincipalGroupRelation;source(uid)[unique=true];target(uid)[unique=true] 
+;basecmsmanagergroup;customercmsmanagerrole
+
+INSERT_UPDATE Usergroup;uid[unique=true];groups(uid)[mode=append];name;
+;customerbackofficegroup;customercmsmanagerrole;Backoffice Site Store group
+
+$START_USERRIGHTS; ; ; ; ; ; ; ; ;
+Type      ; UID                             ; MemberOfGroups ; Password ; Target                                  ; read ; change ; create ; remove ; change_perm
+UserGroup ; customerbackofficegroup    ;                ;          ;                   ;      ;        ;        ;        ;
+
+# Access Rights for IntegrationAdministrator Users ;;;;;;;;;
+          ;                                 ;                ;          ; Customer                       ; +    ; +      ; +      ; +      ; +                                ; +    ;        ;        ;        ;
+$END_USERRIGHTS; ; ; ; ;
+
+INSERT_UPDATE Employee; uid[unique = true]; $setPassword; name; description; groups(uid); sessionLanguage(isocode); sessionCurrency(isocode); backOfficeLoginDisabled ; 
+;customereditor ; ; CMS Manager ; Manager capable of creating / editing customers ; customerbackofficegroup ; ; ; false

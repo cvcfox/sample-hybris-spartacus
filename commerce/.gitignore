@@ -1,0 +1,16 @@
+c4c-integration
+hybris-sbg
+installer
+licenses
+README
+SIGNATURE.SMF
+hybris/bin/platform
+hybris/bin/modules
+hybris/data
+hybris/log
+hybris/roles
+hybris/temp
+build-tools
+hybris/bin/dummy.txt
+
+*.class

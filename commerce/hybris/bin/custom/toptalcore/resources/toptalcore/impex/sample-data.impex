@@ -1,0 +1,400 @@
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+#******************************This file is generated - please do not edit it. It will be regenerated after every build.********************************#
+# ImpEx template for Importing all Localisations for Products in the Electronics Store
+
+# Macros / Replacement Parameter definitions
+$productCatalog=electronicsProductCatalog
+$productCatalogName=Electronics Product Catalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Online'])[unique=true,default=$productCatalog:Online]
+
+$lang=en
+
+
+# Update allProducts with localisations
+UPDATE Product ; code[unique=true] ; $catalogVersion ; name[lang=$lang]                      ;  
+               ; 107701            ;                 ; Broccoli                              
+               ; 1099285           ;                 ; Burritos                              
+               ; 1099413           ;                 ; Ravioli                               
+               ; 110561            ;                 ; Strawberries                          
+               ; 1209761           ;                 ; Meatballs                             
+               ; 1225694           ;                 ; Eggs                                  
+               ; 1231346           ;                 ; Green Bean Casserole With Fried Onions
+               ; 1232590           ;                 ; Potato                                
+               ; 1291399           ;                 ; Tamale                                
+               ; 1297878           ;                 ; Mac and Cheese                        
+               ; 1298094           ;                 ; Ribs                                  
+               ; 1312564           ;                 ; Tater Tots                            
+               ; 1312640           ;                 ; Olive Garden Breadsticks              
+               ; 1320808           ;                 ; Doritos                               
+               ; 1322031           ;                 ; Cantalope                             
+               ; 1322041           ;                 ; Orange                                
+               ; 1325806           ;                 ; Ham                                   
+               ; 1366001           ;                 ; Pizza                                 
+               ; 1366053           ;                 ; Reece Peanut Cups                     
+               ; 137220            ;                 ; Tacos                                 
+               ; 1377492           ;                 ; Lasagna                               
+               ; 1382080           ;                 ; Muffins                               
+               ; 1391319           ;                 ; Banana                                
+               ; 1422218           ;                 ; Popcorn                               
+               ; 1422222           ;                 ; Honeydew                              
+               ; 1422224           ;                 ; Bacon                                 
+               ; 1422706           ;                 ; Corn                                  
+               ; 1432722           ;                 ; Chicken Nuggets                       
+               ; 1438465           ;                 ; Salad                                 
+               ; 1438466           ;                 ; Ice Cream                             
+               ; 1438467           ;                 ; Burger                                
+               ; 1446509           ;                 ; Kiwi                                  
+               ; 1451546           ;                 ; Fried Zucchini Blossoms               
+               ; 1451563           ;                 ; Ice Cream Cake                        
+               ; 149243            ;                 ; Roasted Chicken and Garlic            
+               ; 1494590           ;                 ; Bagel                                 
+               ; 1532809           ;                 ; Chimichanga                           
+               ; 1550476           ;                 ; Pudding                               
+               ; 1568824           ;                 ; Cranberry                             
+               ; 1641905           ;                 ; Gravy                                 
+               ; 1687508           ;                 ; Brownies                              
+               ; 1715477           ;                 ; French Fries                          
+               ; 1716323           ;                 ; Steak                                 
+               ; 1776947           ;                 ; Bread                                 
+               ; 1776948           ;                 ; Hot Dogs                              
+               ; 1934398           ;                 ; Peaches                               
+               ; 1934406           ;                 ; Mango                                 
+               ; 1934793           ;                 ; Nachos                                
+               ; 1934794           ;                 ; Biscuits and Gravy                    
+               ; 1934795           ;                 ; Banana Bread                          
+               ; 1934796           ;                 ; Teriyaki                              
+               ; 1978431           ;                 ; Cheese                                
+               ; 1978440           ;                 ; Chocolate Cake                        
+               ; 1978440_blue      ;                 ; Marinara Sauce                        
+               ; 1978440_green     ;                 ; Gyro Sandwhich                        
+               ; 1978440_red       ;                 ; Crepes                                
+               ; 1981412           ;                 ; Pancakes                              
+               ; 1981413           ;                 ; Carrot Cake                           
+               ; 1981414           ;                 ; Enchilada                             
+               ; 1981415           ;                 ; Alfredo Sauce                         
+               ; 1986316           ;                 ; Apple Sauce                           
+               ; 1990255           ;                 ; Chicken Tenders                       
+               ; 1992689           ;                 ; Donuts                                
+               ; 1992691           ;                 ; Cookies                               
+               ; 1992692           ;                 ; Blueberries                           
+               ; 1992693           ;                 ; Fried Chicken                         
+               ; 1992695           ;                 ; Apple Pie                             
+               ; 1992696           ;                 ; French Toast                          
+               ; 1992697           ;                 ; Apple                                 
+               ; 1993747           ;                 ; Raspberries                           
+               ; 1993748           ;                 ; Baked Potato                          
+               ; 1997551           ;                 ; Pulled Pork                           
+               ; 2006139           ;                 ; Potato Chips                          
+               ; 2006365           ;                 ; Cheesecake                            
+               ; 2053226           ;                 ; Croissant                             
+               ; 2053266           ;                 ; Chocolate Covered Strawberries        
+               ; 2053367           ;                 ; Mashed Potatoes                       
+               ; 2054947           ;                 ; Sushi                                 
+               ; 2054948           ;                 ; Soup                                  
+               ; 2063624           ;                 ; Cheetos                               
+               ; 2114091           ;                 ; Calzone                               
+               ; 2140197           ;                 ; Pumpkin Pie                           
+               ; 2140285           ;                 ; Gelatin                               
+               ; 2149500           ;                 ; Lamb Chops                            
+               ; 2231913           ;                 ; Grilled Chicken                       
+               ; 2278102           ;                 ; Chicken Pot Pie                       
+               ; 2292454           ;                 ; Green Beans                           
+               ; 23191             ;                 ; Sausage                               
+               ; 23210             ;                 ; Salsa                                 
+               ; 23213             ;                 ; Turkey                                
+               ; 23231             ;                 ; Submarine Sandwiches                  
+               ; 23355             ;                 ; Shrimp                                
+               ; 2336001           ;                 ; Pasta                                 
+               ; 2336002           ;                 ; Fried Rice                            
+               ; 2336004           ;                 ; Onion Rings                           
+               ; 266685            ;                 ; Ginger Bread                          
+               ; 266899            ;                 ; Tomato                                
+               ; 278688            ;                 ; Stuffing                              
+               ; 280916            ;                 ; Sweet Potatoes                        
+               ; 284533            ;                 ; Fried Pork Chops and Gravy            
+               ; 2861342           ;                 ; Broccoli                              
+               ; 2867992           ;                 ; Burritos                              
+               ; 288420            ;                 ; Ravioli                               
+               ; 288846            ;                 ; Strawberries                          
+               ; 2894920           ;                 ; Meatballs                             
+               ; 289540            ;                 ; Eggs                                  
+               ; 2913966           ;                 ; Green Bean Casserole With Fried Onions
+               ; 2934297           ;                 ; Potato                                
+               ; 2934302           ;                 ; Tamale                                
+               ; 2934303           ;                 ; Mac and Cheese                        
+               ; 2938457           ;                 ; Ribs                                  
+               ; 2938458           ;                 ; Tater Tots                            
+               ; 29925             ;                 ; Olive Garden Breadsticks              
+               ; 300938            ;                 ; Doritos                               
+               ; 301233            ;                 ; Cantalope                             
+               ; 301544            ;                 ; Orange                                
+               ; 325065            ;                 ; Ham                                   
+               ; 325101            ;                 ; Pizza                                 
+               ; 325234            ;                 ; Reece Peanut Cups                     
+               ; 325414            ;                 ; Tacos                                 
+               ; 325715            ;                 ; Lasagna                               
+               ; 328796            ;                 ; Muffins                               
+               ; 3325048           ;                 ; Banana                                
+               ; 335443            ;                 ; Popcorn                               
+               ; 335546            ;                 ; Honeydew                              
+               ; 3357724           ;                 ; Bacon                                 
+               ; 3357888           ;                 ; Corn                                  
+               ; 337958            ;                 ; Chicken Nuggets                       
+               ; 337981            ;                 ; Salad                                 
+               ; 3400506           ;                 ; Ice Cream                             
+               ; 3429337           ;                 ; Burger                                
+               ; 343090            ;                 ; Kiwi                                  
+               ; 346944            ;                 ; Fried Zucchini Blossoms               
+               ; 3470545           ;                 ; Ice Cream Cake                        
+               ; 3505505           ;                 ; Roasted Chicken and Garlic            
+               ; 3514515           ;                 ; Bagel                                 
+               ; 3514516           ;                 ; Chimichanga                           
+               ; 3514517           ;                 ; Pudding                               
+               ; 3514519           ;                 ; Cranberry                             
+               ; 3514520           ;                 ; Gravy                                 
+               ; 3514521           ;                 ; Brownies                              
+               ; 3514522           ;                 ; French Fries                          
+               ; 3514523           ;                 ; Steak                                 
+               ; 3555166           ;                 ; Bread                                 
+               ; 3557133           ;                 ; Hot Dogs                              
+               ; 356788            ;                 ; Peaches                               
+               ; 356970            ;                 ; Mango                                 
+               ; 358639            ;                 ; Nachos                                
+               ; 3595723           ;                 ; Biscuits and Gravy                    
+               ; 360308            ;                 ; Banana Bread                          
+               ; 3683639           ;                 ; Teriyaki                              
+               ; 3683640           ;                 ; Cheese                                
+               ; 3708646           ;                 ; Chocolate Cake                        
+               ; 3730957           ;                 ; Marinara Sauce                        
+               ; 3789394           ;                 ; Gyro Sandwhich                        
+               ; 3958110           ;                 ; Crepes                                
+               ; 3965240           ;                 ; Pancakes                              
+               ; 4135570           ;                 ; Carrot Cake                           
+               ; 4200373           ;                 ; Enchilada                             
+               ; 4205246           ;                 ; Alfredo Sauce                         
+               ; 4205431           ;                 ; Apple Sauce                           
+               ; 4205436           ;                 ; Chicken Tenders                       
+               ; 429430            ;                 ; Donuts                                
+               ; 442466            ;                 ; Cookies                               
+               ; 443175            ;                 ; Blueberries                           
+               ; 450848            ;                 ; Fried Chicken                         
+               ; 4528140           ;                 ; Apple Pie                             
+               ; 454831            ;                 ; French Toast                          
+               ; 458542            ;                 ; Apple                                 
+               ; 4608858           ;                 ; Raspberries                           
+               ; 472054            ;                 ; Baked Potato                          
+               ; 472056            ;                 ; Pulled Pork                           
+               ; 472057            ;                 ; Potato Chips                          
+               ; 4731172           ;                 ; Cheesecake                            
+               ; 473765            ;                 ; Croissant                             
+               ; 473995            ;                 ; Chocolate Covered Strawberries        
+               ; 473996            ;                 ; Mashed Potatoes                       
+               ; 4769104           ;                 ; Sushi                                 
+               ; 4769626           ;                 ; Soup                                  
+               ; 4785190           ;                 ; Cheetos                               
+               ; 4786113           ;                 ; Calzone                               
+               ; 4787985           ;                 ; Pumpkin Pie                           
+               ; 4787986           ;                 ; Gelatin                               
+               ; 478828            ;                 ; Lamb Chops                            
+               ; 479742            ;                 ; Grilled Chicken                       
+               ; 479956            ;                 ; Chicken Pot Pie                       
+               ; 4808175           ;                 ; Green Beans                           
+               ; 4812254           ;                 ; Sausage                               
+               ; 482105            ;                 ; Salsa                                 
+               ; 4841579           ;                 ; Turkey                                
+               ; 4852405           ;                 ; Submarine Sandwiches                  
+               ; 4868199           ;                 ; Shrimp                                
+               ; 4869234           ;                 ; Pasta                                 
+               ; 4872010           ;                 ; Fried Rice                            
+               ; 4873607           ;                 ; Onion Rings                           
+               ; 489680            ;                 ; Ginger Bread                          
+               ; 489702            ;                 ; Tomato                                
+               ; 492274            ;                 ; Stuffing                              
+               ; 493683            ;                 ; Sweet Potatoes                        
+               ; 503392            ;                 ; Fried Pork Chops and Gravy            
+               ; 5103712           ;                 ; Broccoli                              
+               ; 5103775           ;                 ; Burritos                              
+               ; 514518            ;                 ; Ravioli                               
+               ; 5473115           ;                 ; Strawberries                          
+               ; 553637            ;                 ; Meatballs                             
+               ; 560583            ;                 ; Eggs                                  
+               ; 562675            ;                 ; Green Bean Casserole With Fried Onions
+               ; 572461            ;                 ; Potato                                
+               ; 572473            ;                 ; Tamale                                
+               ; 5864567           ;                 ; Mac and Cheese                        
+               ; 5864583           ;                 ; Ribs                                  
+               ; 5897548           ;                 ; Tater Tots                            
+               ; 592506            ;                 ; Olive Garden Breadsticks              
+               ; 594471            ;                 ; Doritos                               
+               ; 65652             ;                 ; Cantalope                             
+               ; 669789            ;                 ; Orange                                
+               ; 669797            ;                 ; Ham                                   
+               ; 669799            ;                 ; Pizza                                 
+               ; 676442            ;                 ; Reece Peanut Cups                     
+               ; 686951            ;                 ; Tacos                                 
+               ; 695824            ;                 ; Lasagna                               
+               ; 726510            ;                 ; Muffins                               
+               ; 726511            ;                 ; Banana                                
+               ; 768108            ;                 ; Popcorn                               
+               ; 779841            ;                 ; Honeydew                              
+               ; 779842            ;                 ; Bacon                                 
+               ; 779848            ;                 ; Corn                                  
+               ; 779864            ;                 ; Chicken Nuggets                       
+               ; 779866            ;                 ; Salad                                 
+               ; 779868            ;                 ; Ice Cream                             
+               ; 784171            ;                 ; Burger                                
+               ; 784172            ;                 ; Kiwi                                  
+               ; 784173            ;                 ; Fried Zucchini Blossoms               
+               ; 784343            ;                 ; Ice Cream Cake                        
+               ; 784380            ;                 ; Roasted Chicken and Garlic            
+               ; 784381            ;                 ; Bagel                                 
+               ; 791635            ;                 ; Chimichanga                           
+               ; 805693            ;                 ; Pudding                               
+               ; 812888            ;                 ; Cranberry                             
+               ; 816261            ;                 ; Gravy                                 
+               ; 816262            ;                 ; Brownies                              
+               ; 816323            ;                 ; French Fries                          
+               ; 816324            ;                 ; Steak                                 
+               ; 816326            ;                 ; Bread                                 
+               ; 816379            ;                 ; Hot Dogs                              
+               ; 816780            ;                 ; Peaches                               
+               ; 816802            ;                 ; Mango                                 
+               ; 824259            ;                 ; Nachos                                
+               ; 824267            ;                 ; Biscuits and Gravy                    
+               ; 832382            ;                 ; Banana Bread                          
+               ; 832386            ;                 ; Teriyaki                              
+               ; 834954            ;                 ; Cheese                                
+               ; 834955            ;                 ; Chocolate Cake                        
+               ; 847942            ;                 ; Marinara Sauce                        
+               ; 848855            ;                 ; Gyro Sandwhich                        
+               ; 855246            ;                 ; Crepes                                
+               ; 861175            ;                 ; Pancakes                              
+               ; 872912            ;                 ; Carrot Cake                           
+               ; 897853            ;                 ; Enchilada                             
+               ; 898503            ;                 ; Alfredo Sauce                         
+               ; 898520            ;                 ; Apple Sauce                           
+               ; 899387            ;                 ; Chicken Tenders                       
+               ; 911227            ;                 ; Donuts                                
+               ; 917699            ;                 ; Cookies                               
+               ; 918735            ;                 ; Blueberries                           
+               ; 932577            ;                 ; Fried Chicken                         
+               ; 932643            ;                 ; Apple Pie                             
+
+
+
+$productCatalog=electronicsProductCatalog
+$productCatalogName=Electronics Product Catalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Online'])[unique=true,default=$productCatalog:Online]
+
+
+# Language     
+$lang=en       
+
+# Create Categories
+UPDATE Category ; code[unique=true] ; $catalogVersion ; name[lang=$lang] ;              
+                ; 1                 ;                 ; Fruit            ;              
+                ; 106               ;                 ; Vegetables       ;              
+                ; 1201              ;                 ; Potatoes         ;              
+                ; 1288              ;                 ; Meat             ;              
+                ; 1421              ;                 ; Dairy            ;              
+                ; 206               ;                 ; Vegetarian       ;              
+                ; 571               ;                 ; Indian           ;              
+                ; 574               ;                 ; Chinese          ;              
+                ; 575               ;                 ; Baby             ;              
+                ; 576               ;                 ; Beauty           ;              
+                ; 577               ;                 ; Chips            ;              
+                ; 578               ;                 ; Snacks           ;              
+                ; 584               ;                 ; Eggs             ;              
+                ; 585               ;                 ; Drinks           ;              
+                ; 586               ;                 ; Frozen           ;              
+                ; 587               ;                 ; Health           ;              
+                ; 588               ;                 ; International    ;              
+                ; 597               ;                 ; Muffins          ;              
+                ; 598               ;                 ; Fish             ;              
+                ; 604               ;                 ; Beans            ;              
+                ; 814               ;                 ; Tomatoes         ;              
+                ; 816               ;                 ; Tacos            ;              
+                ; 827               ;                 ; Fruit            ;              
+                ; 829               ;                 ; Vegetables       ;              
+                ; 902               ;                 ; Potatoes         ;              
+                ; 934               ;                 ; Meat             ;              
+                ; brand_1           ;                 ; Dairy            ; Dairy        
+                ; brand_10          ;                 ; Vegetarian       ; Vegetarian   
+                ; brand_103         ;                 ; Indian           ; Indian       
+                ; brand_128         ;                 ; Chinese          ; Chinese      
+                ; brand_18          ;                 ; Baby             ; Baby         
+                ; brand_2           ;                 ; Beauty           ; Beauty       
+                ; brand_2171        ;                 ; Chips            ; Chips        
+                ; brand_251         ;                 ; Snacks           ; Snacks       
+                ; brand_26          ;                 ; Eggs             ; Eggs         
+                ; brand_5           ;                 ; Drinks           ; Drinks       
+                ; brand_702         ;                 ; Frozen           ; Frozen       
+                ; brand_745         ;                 ; Health           ; Health       
+                ; brand_75          ;                 ; International    ; International
+                ; brand_750         ;                 ; Muffins          ; Muffins      
+                ; brand_88          ;                 ; Fish             ; Fish         
+                ; brand_91          ;                 ; Beans            ; Beans        
+
+
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Online])[default=$contentCatalog:Online]
+$picture=media(code, $contentCV);                   
+$siteResource=jar:de.hybris.platform.electronicsstore.constants.ElectronicsstoreConstants&/electronicsstore/import/sampledata/contentCatalogs/$contentCatalog
+
+# Language      
+$lang=en        
+
+# CMS Link Components
+UPDATE CMSLinkComponent ; $contentCV[unique=true] ; uid[unique=true]                ; linkName[lang=$lang]
+                        ;                         ; AboutSAPCommerceLink            ; Fruit               
+                        ;                         ; AccountAddressBookLink          ; Vegetables          
+                        ;                         ; AccountHomeLink                 ; Potatoes            
+                        ;                         ; AccountManageAddressLink        ; Meat                
+                        ;                         ; AccountManagePaymentDetailsLink ; Dairy               
+                        ;                         ; AccountOrderHistoryLink         ; Vegetarian          
+                        ;                         ; AccountPaymentDetailsLink       ; Indian              
+                        ;                         ; AccountPersonalDetailsLink      ; Chinese             
+                        ;                         ; AccountProfileLink              ; Baby                
+                        ;                         ; AccountUpdatePasswordLink       ; Beauty              
+                        ;                         ; AccountViewOrderHistoryLink     ; Chips               
+                        ;                         ; AgileCommerceBlogLink           ; Snacks              
+                        ;                         ; AllBrandsCategoryLink           ; Eggs                
+                        ;                         ; BlackAndWhiteFilmsCategoryLink  ; Drinks              
+                        ;                         ; BlankVideotapesCategoryLink     ; Frozen              
+                        ;                         ; CameraAccessoriesCategoryLink   ; Health              
+                        ;                         ; CameraLensesCategoryLink        ; International       
+                        ;                         ; CamerasCategoryLink             ; Muffins             
+                        ;                         ; CamerasFlashesCategoryLink      ; Fish                
+                        ;                         ; CanonBrandCategoryLink          ; Beans               
+                        ;                         ; CloseAccountLink                ; Tomatoes            
+                        ;                         ; ColourFilmsCategoryLink         ; Tacos               
+                        ;                         ; ComponentsCategoryLink          ; Fruit               
+                        ;                         ; ConsentManagementLink           ; Vegetables          
+                        ;                         ; ContactUsLink                   ; Potatoes            
+                        ;                         ; DigitalCamerasCategoryLink      ; Meat                
+                        ;                         ; DigitalCompactsCategoryLink     ; Dairy               
+                        ;                         ; DigitalSLRCategoryLink          ; Vegetarian          
+                        ;                         ; DocumentationLink               ; Indian              
+                        ;                         ; FAQLink                         ; Chinese             
+                        ;                         ; FacebookLink                    ; Baby                
+                        ;                         ; FilmCamerasCategoryLink         ; Beauty              
+                        ;                         ; FlashMemoryCategoryLink         ; Chips               
+                        ;                         ; FujifilmBrandCategoryLink       ; Snacks              
+                        ;                         ; HandheldCamcordersCategoryLink  ; Eggs                
+                        ;                         ; HomepageNavLink                 ; Drinks              
+                        ;                         ; IciduBrandCategoryLink          ; Frozen              
+                        ;                         ; KingstonBrandCategoryLink       ; Health              
+                        ;                         ; KodakBrandCategoryLink          ; International       
+                        ;                         ; LinkedInLink                    ; Muffins             
+                        ;                         ; PowerSuppliesCategoryLink       ; Fish                
+                        ;                         ; SamsungBrandCategoryLink        ; Beans               
+                        ;                         ; SonyBrandCategoryLink           ; Tomatoes            
+                        ;                         ; SpecialOffersLink               ; Tacos               
+                        ;                         ; SweexBrandCategoryLink          ; Fruit               
+                        ;                         ; TDKBrandCategoryLink            ; Vegetables          
+                        ;                         ; ToshibaBrandCategoryLink        ; Potatoes            
+                        ;                         ; TripodsCategoryLink             ; Meat                
+                        ;                         ; TwitterLink                     ; Dairy               
+                        ;                         ; VisitSAPLink                    ; Vegetarian          

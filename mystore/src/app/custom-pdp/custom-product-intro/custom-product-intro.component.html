@@ -1,0 +1,7 @@
+<ng-container *ngIf="product$ | async as product">
+	<h2>{{ product.price.formattedValue }}</h2>
+	
+	<p>{{ product.summary}}</p>
+	
+	<p>Calories: {{ product.calories }}</p>
+</ng-container>
